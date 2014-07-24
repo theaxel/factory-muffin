@@ -36,7 +36,7 @@ class Factory extends Kind
      */
     public function generate()
     {
-        $factory = new \League\FactoryMuffin\FactoryMuffin;
+        $factory = new \League\FactoryMuffin\Facade\FactoryMuffin;
         $model = $factory->create(substr($this->kind, 8));
         return $this->getId($model);
     }
